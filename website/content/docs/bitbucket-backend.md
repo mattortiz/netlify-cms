@@ -1,7 +1,7 @@
 ---
 title: Bitbucket
-weight: 20
 group: backends
+weight: 20
 ---
 
 For repositories stored on Bitbucket, the `bitbucket` backend allows CMS users to log in directly with their Bitbucket account. Note that all users must have write access to your content repository for this to work.
@@ -21,7 +21,7 @@ To enable it:
 
 With Bitbucket's Implicit Grant, users can authenticate with Bitbucket directly from the client. To do this:
 
-1. Follow the [Atlassian docs](https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html) to create an OAuth consumer. Make sure you allow `Account/Read` and `Repository/Write` permissions. For the **Callback URL**, enter the address where you access Netlify CMS, for example, `https://www.mysite.com/admin/`.
+1. Follow the [Atlassian docs](https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html) to create an OAuth consumer. Make sure you allow `Account/Read`, `Repository/Write`, `Pull requests/Read` and `Pull requests/Write` permissions. For the **Callback URL**, enter the address where you access Netlify CMS, for example, `https://www.mysite.com/admin/`.
 2. Bitbucket gives you a **Key**. Copy this Key and enter it in your Netlify CMS `config.yml` file, along with the following settings:
 
     ```yaml
